@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image:url('https://i.pinimg.com/564x/fd/50/86/fd50864fe73f0488fea2843fa91ab8d8.jpg');
+  background-size: cover;
+  filter: brightness(50%); /* Adjust the percentage to control brightness */
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav__links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: inline;
+  margin-left: 60px;
+  font-size: large;
+}
+
+.link a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #ff5722;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #050504;
+  color:white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn a {
+  text-decoration:none;
+}
+.btn a{
+  color:white;
+}
+
+.btn:hover {
+  background-color: rgb(159, 232, 243);
+  color:#050504;
+}
+
+.btn:hover a{
+  color:#050504;
+}
+
+
+/* Header Styles */
+.header {
+  color: #0d0d0d;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.header .content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+
+.header p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color:rgb(16, 16, 16);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0b0b0b;
+    background-color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #afe9f3;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 

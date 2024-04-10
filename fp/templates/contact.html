@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/contact.css" />
+    <link rel="stylesheet" href="/static/about.css">
+    <title>Dementia Prediction | Contact</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">DementiaPrediction</div>
+      <ul class="nav__links">
+        <li class="link"><a href="/index1">Home</a></li>
+              <li class="link"><a href="/about_dementia">About Us</a></li>
+              <li class="link"><a href="/precautions">Precautions</a></li>
+              <li class="link"><a href="/predict">Prediction</a></li>
+              <li class="link"><a href="/contact">Contact</a></li>
+              <li class="link"><a href="/login">Logout</a></li>
+      </ul>
+      
+    </nav>
+      <div class="contact-form">
+        <h1>Contact Us</h1>
+        <div class="txtb">
+          <label>Full Name :</label>
+          <input type="text" id="fullName" name="" value="" placeholder="Enter Your Name">
+        </div>
+    
+        <div class="txtb">
+          <label>Email :</label>
+          <input type="email" id="email" name="" value="" placeholder="Enter Your Email">
+        </div>
+    
+        <div class="txtb">
+          <label>Phone Number :</label>
+          <input type="text" id="phoneNumber" name="" value="" placeholder="Enter Your Phone Number">
+        </div>
+    
+        <div class="txtb">
+          <label>Message :</label>
+          <textarea id="message"></textarea>
+        </div>
+        <a class="button" id="sendButton">Send</a>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const sendButton = document.getElementById('sendButton');
+    
+          sendButton.addEventListener('click', function() {
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const message = document.getElementById('message').value;
+    
+            if (fullName && email && phoneNumber && message) {
+              // All fields are filled, display sent message
+              alert('Message sent!');
+            } else {
+              // Some fields are empty, prompt user to fill all details
+              alert('Please fill all details');
+            }
+          });
+        });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: url('https://t4.ftcdn.net/jpg/06/30/07/51/360_F_630075111_1lv0fPT1qYZ0VrRUs5Dq93ufcD9wcjEy.jpg');
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 700px;
+    width: 100%;
+    background-color: transparent;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.wrapper .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.wrapper form .field {
+    margin-bottom: 20px;
+}
+
+.wrapper form .field input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid transparent;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+.wrapper form .field input:valid {
+    border-color: transparent;
+}
+
+.wrapper form .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wrapper form .checkbox input {
+    margin-right: 10px;
+}
+
+.wrapper form .pass-link a {
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.wrapper form .pass-link a:hover {
+    color: #71b7e6;
+}
+
+.wrapper form .signup-link a {
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.wrapper form .signup-link a:hover {
+    color: #71b7e6;
+}
+
+.wrapper form .field input[type="submit"] {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-image: url('https://t4.ftcdn.net/jpg/06/30/07/51/360_F_630075111_1lv0fPT1qYZ0VrRUs5Dq93ufcD9wcjEy.jpg');
+      background-size: cover;
+  }
+  
+  .wrapper {
+      max-width: 700px;
+      width: 100%;
+      background-color: transparent;
+      padding: 25px 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+   .sam{
+    padding: 50px;
+    
+   }
+  
+   
+  
+  .wrapper form .field {
+      margin-bottom: 20px;
+  }
+  
+  .wrapper form .field input {
+      height: 45px;
+      width: 100%;
+      outline: none;
+      font-size: 16px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid transparent;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+  }
+  
+  .wrapper form .field input:focus,
+  .wrapper form .field input:valid {
+      border-color: transparent;
+  }
+  
+  .wrapper form .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  
+  .wrapper form .checkbox input {
+      margin-right: 10px;
+  }
+  
+  .wrapper form .pass-link a {
+      text-decoration: none;
+      color: #9b59b6;
+      font-weight: 500;
+      transition: color 0.3s ease;
+  }
+  
+  .wrapper form .pass-link a:hover {
+      color: #71b7e6;
+  }
+  
+  .wrapper form .signup-link a {
+      text-decoration: none;
+      color: #9b59b6;
+      font-weight: 500;
+      transition: color 0.3s ease;
+  }
+  
+  .wrapper form .signup-link a:hover {
+      color: #71b7e6;
+  }
+  
+  
+  .wrapper form .field input[type="submit"] {
+      height: 55px;
+      border-radius: 5px;
+      border: none;
+      color: transparent;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      text-align: center;
+  }
+  
+  .wrapper form .field input[type="submit"]:hover {
+      background: linear-gradient(-135deg, transparent);
+  }
+   
+  
+}
+
+.wrapper form .field input[type="submit"]:hover {
+    background: linear-gradient(-135deg, transparent);
+}
+

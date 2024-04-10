@@ -1,0 +1,252 @@
+/* Global Styles */
+body {
+  margin: 0;
+  width:100%;
+  font-family: Arial, sans-serif;
+  background-image:url('https://i.pinimg.com/564x/fd/50/86/fd50864fe73f0488fea2843fa91ab8d8.jpg');
+  background-size: cover;
+  filter: brightness(50%); /* Adjust the percentage to control brightness */
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav__links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: inline;
+  margin-left: 60px;
+  font-size: large;
+}
+
+.link a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #ff5722;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #050504;
+  color:white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn a {
+  text-decoration:none;
+}
+.btn a{
+  color:white;
+}
+
+.btn:hover {
+  background-color: rgb(159, 232, 243);
+  color:#050504;
+}
+
+.btn:hover a{
+  color:#050504;
+}
+
+
+/* Header Styles */
+.header {
+  color: #0d0d0d;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.header .content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+
+.header p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color:rgb(16, 16, 16);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0b0b0b;
+    background-color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #afe9f3;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ .container .dementia{
+    height: 100%;
+    width: 100%;
+    padding: 0 0;
+    padding-top:0 ;
+    background: transparent;
+    max-height: fit-content;
+  }
+  .pic{
+    height: 400px;
+    width:  400px;
+    padding-right: 150px;
+    padding-top: 70px;
+  }
+  .precautions{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #4070f4;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 10px;
+  }
+  .read{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .read:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }
+  /* Style for form container */
+.container-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for form title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for form rows */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Style for form groups */
+.form-group {
+  flex: 1;
+   
+   
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for inputs */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for submit button on hover */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

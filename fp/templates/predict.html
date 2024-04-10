@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/precautions.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    /* *{
+        color: none;
+    } */
+    .login {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background: transparent;
+        border-radius: 8px;
+        
+      }
+      
+      h1 {
+        text-align: center;
+         
+      }
+      
+      form {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        
+      }
+      
+      input {
+        
+         background-color: white;
+        width: 48%;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .form-input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: black;
+        background: transparent;
+      }
+      #text{
+        color: black;
+        background: transparent;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(237, 229, 229);
+        color: #0f0f0f;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      /* button:hover {
+        color: white;
+        background-color: #171b1c;
+      } */
+    </style>
+    <title>Dementia Prediction | Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav__logo">DementiaPrediction</div>
+            <ul class="nav__links">
+              <li class="link"><a href="/index1">Home</a></li>
+              <li class="link"><a href="/about_dementia">About Us</a></li>
+              <li class="link"><a href="/precautions">Precautions</a></li>
+              <li class="link"><a href="/predict">Prediction</a></li>
+              <li class="link"><a href="/contact">Contact</a></li>
+              <li class="link"><a href="/login">Logout</a></li>
+            </ul>
+          </nav>
+    </div>
+        <div class="login">
+            <h1>Dementia Prediction</h1>
+        
+             <!-- Main Input For Receiving Query to our ML -->
+            <form action="/make_prediction" method="post">
+                <input id="text" type="text" name="Visit" placeholder="Visit" required="required" />
+                <input id="text" type="text" name="MR Delay" placeholder="MR Delay" required="required" />
+                <input id="text" type="text" name="Gender" placeholder="Gender (male-0/female-1)" required="required" /> 
+                <input id="text" type="text" name="Age" placeholder="Age" required="required" /> 
+                <input id="text" type="text" name="EDUC" placeholder="Educational Status (EDUC)" required="required" /> 
+                <input id="text" type="text" name="SES" placeholder="Socio Economic status (SES)" required="required" /> 
+                <input id="text" type="text" name="MMSE" placeholder="Minimal Mental State Examination (MMSE)" required="required" /> 
+                <input id="text" type="text" name="CDR" placeholder="Clinical Dementia Rate (CDR)" required="required" /> 
+                <input id="text" type="text" name="eTIV" placeholder="eTIV" required="required" /> 
+                <input id="text" type="text" name="nWBV" placeholder="nWBE" required="required" /> 
+                <input  class="form-input" type="text" name="ASF" placeholder="ASF" required="required" /> 
+        
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+        
+           <br>
+           <br>
+           {{ prediction_text }}
+        
+         </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('https://t4.ftcdn.net/jpg/06/30/07/51/360_F_630075111_1lv0fPT1qYZ0VrRUs5Dq93ufcD9wcjEy.jpg');
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .nav__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .link {
+    display: inline;
+    margin-left: 60px;
+    font-size: large;
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .link a:hover {
+    color: #ff5722;
+  }
+  
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex-grow: 1;
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    /* Adjust spacing between inputs */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #3498db;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
